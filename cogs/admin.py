@@ -1,3 +1,4 @@
+from bot import Skybot
 import os
 import time
 import copy
@@ -9,7 +10,7 @@ from utils.embed import Embed
 from pymongo.errors import DuplicateKeyError
 class Admin(commands.Cog):
     def __init__(self, bot):
-        self.bot: skybot = bot
+        self.bot: Skybot = bot
         self.cycleStatus.start()
 
     @commands.Cog.listener()
